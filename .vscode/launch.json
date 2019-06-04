@@ -1,0 +1,25 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Chrome against localhost",
+			"type": "chrome",
+			"request": "launch",
+			"url": "file://${workspaceFolder}/index.html",
+			"webRoot": "${workspaceFolder}",
+			"userDataDir": "${workspaceRoot}/.vscode/chrome",
+			"preLaunchTask": {
+				"type" : "haxe",
+				"args" : "active configuration"
+			}
+		},
+		{
+            "name": "Launch index.html",
+            "type": "chrome",
+            "request": "launch",
+			"file": "${workspaceFolder}/index.html",
+			"webRoot": "${workspaceFolder}",
+			"userDataDir": "${workspaceRoot}/.vscode/chrome",
+        }
+	]
+}
